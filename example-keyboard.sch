@@ -36,37 +36,6 @@ F 3 "~" H 8250 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R1
-U 1 1 5F96494A
-P 7700 1750
-F 0 "R1" H 7759 1796 50  0000 L CNN
-F 1 "10k" H 7759 1705 50  0000 L CNN
-F 2 "Resistor_THT:R_Box_L14.0mm_W5.0mm_P9.00mm" H 7700 1750 50  0001 C CNN
-F 3 "~" H 7700 1750 50  0001 C CNN
-	1    7700 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0101
-U 1 1 5F964EFA
-P 7700 1450
-F 0 "#PWR0101" H 7700 1300 50  0001 C CNN
-F 1 "+5V" H 7715 1623 50  0000 C CNN
-F 2 "" H 7700 1450 50  0001 C CNN
-F 3 "" H 7700 1450 50  0001 C CNN
-	1    7700 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 2100 7700 2100
-Wire Wire Line
-	7700 2100 7700 1850
-Connection ~ 7700 2100
-Wire Wire Line
-	7700 1650 7700 1450
-Wire Wire Line
-	7700 2100 8050 2100
-$Comp
 L power:GND #PWR0102
 U 1 1 5F965943
 P 8800 2100
@@ -89,28 +58,6 @@ F 2 "" H 7350 2000 50  0001 C CNN
 F 3 "" H 7350 2000 50  0001 C CNN
 	1    7350 2000
 	0    -1   -1   0   
-$EndComp
-$Comp
-L keebio:MX SW_R1_C2
-U 1 1 5F969E2E
-P 2800 1500
-F 0 "SW_R1_C2" H 2800 1723 50  0000 C CNN
-F 1 "MX" H 2800 1200 60  0001 C CNN
-F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 2800 1500 60  0001 C CNN
-F 3 "" H 2800 1500 60  0001 C CNN
-	1    2800 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L keebio:MX SW_R2_C1
-U 1 1 5F96A74A
-P 1300 2400
-F 0 "SW_R2_C1" H 1300 2623 50  0000 C CNN
-F 1 "MX" H 1300 2100 60  0001 C CNN
-F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 1300 2400 60  0001 C CNN
-F 3 "" H 1300 2400 60  0001 C CNN
-	1    1300 2400
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1000 1500 1000 2400
@@ -166,17 +113,6 @@ F 3 "~" H 1650 1750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L keebio:MX SW_R1_C1
-U 1 1 5F96749A
-P 1300 1500
-F 0 "SW_R1_C1" H 1300 1723 50  0000 C CNN
-F 1 "MX" H 1300 1200 60  0001 C CNN
-F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 1300 1500 60  0001 C CNN
-F 3 "" H 1300 1500 60  0001 C CNN
-	1    1300 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D3
 U 1 1 5F982F9B
 P 3150 1750
@@ -209,19 +145,6 @@ F 3 "~" H 3150 2650 50  0001 C CNN
 	1    3150 2650
 	0    -1   -1   0   
 $EndComp
-$Comp
-L keebio:MX SW_R2_C2
-U 1 1 5F96AD14
-P 2800 2400
-F 0 "SW_R2_C2" H 2800 2623 50  0000 C CNN
-F 1 "MX" H 2800 2100 60  0001 C CNN
-F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 2800 2400 60  0001 C CNN
-F 3 "" H 2800 2400 60  0001 C CNN
-	1    2800 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 1500 1650 1500
 Wire Wire Line
 	1650 1500 1650 1600
 Wire Wire Line
@@ -230,8 +153,6 @@ Connection ~ 3150 1900
 Wire Wire Line
 	3150 1900 3500 1900
 Wire Wire Line
-	3100 1500 3150 1500
-Wire Wire Line
 	3150 1500 3150 1600
 Wire Wire Line
 	1650 2800 3150 2800
@@ -239,11 +160,61 @@ Connection ~ 3150 2800
 Wire Wire Line
 	3150 2800 3500 2800
 Wire Wire Line
-	1600 2400 1650 2400
-Wire Wire Line
 	1650 2400 1650 2500
 Wire Wire Line
-	3100 2400 3150 2400
-Wire Wire Line
 	3150 2400 3150 2500
+$Comp
+L Switch:SW_Push MX1
+U 1 1 5F98B4D3
+P 1200 1500
+F 0 "MX1" H 1200 1785 50  0000 C CNN
+F 1 "SW_R1_C1" H 1200 1694 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1200 1700 50  0001 C CNN
+F 3 "~" H 1200 1700 50  0001 C CNN
+	1    1200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1500 1650 1500
+$Comp
+L Switch:SW_Push MX2
+U 1 1 5F98C447
+P 2700 1500
+F 0 "MX2" H 2700 1785 50  0000 C CNN
+F 1 "SW_R1_C1" H 2700 1694 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2700 1700 50  0001 C CNN
+F 3 "~" H 2700 1700 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push MX3
+U 1 1 5F98CD21
+P 1200 2400
+F 0 "MX3" H 1200 2685 50  0000 C CNN
+F 1 "SW_R1_C1" H 1200 2594 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1200 2600 50  0001 C CNN
+F 3 "~" H 1200 2600 50  0001 C CNN
+	1    1200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push MX4
+U 1 1 5F98E20A
+P 2700 2400
+F 0 "MX4" H 2700 2685 50  0000 C CNN
+F 1 "SW_R1_C1" H 2700 2594 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2700 2600 50  0001 C CNN
+F 3 "~" H 2700 2600 50  0001 C CNN
+	1    2700 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2400 1650 2400
+Wire Wire Line
+	2900 2400 3150 2400
+Wire Wire Line
+	2900 1500 3150 1500
+Wire Wire Line
+	7350 2100 8050 2100
 $EndSCHEMATC
