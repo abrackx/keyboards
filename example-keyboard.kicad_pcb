@@ -441,7 +441,7 @@
   )
 
   (module Button_Switch_THT:SW_PUSH_6mm_H7.3mm (layer F.Cu) (tedit 5A02FE31) (tstamp 5F93D1D6)
-    (at 120.65 90.17 180)
+    (at 120.65 97.79 180)
     (descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=7.3mm")
     (tags "tact sw push 6mm")
     (path /5F9640D8)
@@ -668,7 +668,7 @@
   )
 
   (module Keebio-Parts:Diode (layer F.Cu) (tedit 549B02AC) (tstamp 5F93CB08)
-    (at 85.09 93.98 90)
+    (at 97.79 92.71 90)
     (path /5F9851AC)
     (fp_text reference D4 (at 0 0 90) (layer F.SilkS)
       (effects (font (size 1.27 1.524) (thickness 0.2032)))
@@ -692,7 +692,7 @@
   )
 
   (module Keebio-Parts:Diode (layer F.Cu) (tedit 549B02AC) (tstamp 5F93CAF9)
-    (at 81.28 93.98 90)
+    (at 92.71 95.25 90)
     (path /5F982F9B)
     (fp_text reference D3 (at 0 0 90) (layer F.SilkS)
       (effects (font (size 1.27 1.524) (thickness 0.2032)))
@@ -716,7 +716,7 @@
   )
 
   (module Keebio-Parts:Diode (layer F.Cu) (tedit 549B02AC) (tstamp 5F93CAEA)
-    (at 77.47 93.98 90)
+    (at 78.74 92.71 90)
     (path /5F984A02)
     (fp_text reference D2 (at 0 0 90) (layer F.SilkS)
       (effects (font (size 1.27 1.524) (thickness 0.2032)))
@@ -740,7 +740,7 @@
   )
 
   (module Keebio-Parts:Diode (layer F.Cu) (tedit 549B02AC) (tstamp 5F93CADB)
-    (at 73.66 93.98 90)
+    (at 73.66 95.25 90)
     (path /5F980E0C)
     (fp_text reference D1 (at 0 0 90) (layer F.SilkS)
       (effects (font (size 1.27 1.524) (thickness 0.2032)))
