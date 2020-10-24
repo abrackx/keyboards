@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L keebio:Elite-C U1
-U 1 1 5F9559EF
-P 6650 2450
-F 0 "U1" H 6650 3287 60  0000 C CNN
-F 1 "Elite-C" H 6650 3181 60  0000 C CNN
-F 2 "Keebio-Parts:Elite-C" V 7700 -50 60  0001 C CNN
-F 3 "" V 7700 -50 60  0001 C CNN
-	1    6650 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW1
 U 1 1 5F9640D8
 P 8250 2100
@@ -71,14 +60,10 @@ Text GLabel 2500 1500 1    50   Input ~ 0
 ROW2
 Text GLabel 3500 2800 2    50   Input ~ 0
 COL2
-Text GLabel 5950 2500 0    50   Input ~ 0
+Text GLabel 7350 2600 2    50   Input ~ 0
 ROW1
-Text GLabel 5950 2700 0    50   Input ~ 0
+Text GLabel 7350 2500 2    50   Input ~ 0
 ROW2
-Text GLabel 5950 2000 0    50   Input ~ 0
-COL1
-Text GLabel 7350 2400 2    50   Input ~ 0
-COL2
 $Comp
 L power:GND #PWR0104
 U 1 1 5F9782AF
@@ -217,4 +202,19 @@ Wire Wire Line
 	2900 1500 3150 1500
 Wire Wire Line
 	7350 2100 8050 2100
+Text GLabel 7350 2400 2    50   Input ~ 0
+COL2
+Text GLabel 7350 2300 2    50   Input ~ 0
+COL1
+$Comp
+L keebio:Elite-C U1
+U 1 1 5F9559EF
+P 6650 2450
+F 0 "U1" H 6650 3287 60  0000 C CNN
+F 1 "Elite-C" H 6650 3181 60  0000 C CNN
+F 2 "Keebio-Parts:Elite-C" V 7700 -50 60  0001 C CNN
+F 3 "" V 7700 -50 60  0001 C CNN
+	1    6650 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
